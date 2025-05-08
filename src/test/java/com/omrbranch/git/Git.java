@@ -21,7 +21,17 @@ public void method5() {
 	
     System.out.println("Method5");
 }
+
+
+
+
+
+
+
+
+
 public void method6() {
+
 	 System.out.println("Method6");
 
 }
@@ -29,8 +39,11 @@ public void method7() {
 	System.out.println("Method7");
 
 	
-}
 
+	
+   System.out.println("Method6");
+
+}
 
 	
 	public static void main(String[] args) {
