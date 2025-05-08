@@ -42,6 +42,7 @@ public void method7() {
 
 	
    System.out.println("Method6");
+   System.out.println("method");
 
 }
 
