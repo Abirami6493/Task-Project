@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>OMR Project</td>
+      <td>06 May 2025, 11:12</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.CommonStep.userShouldVerifyTheStatusCodeIs(int)</td>
+              <td>8</td>
+              <td class="duration" data-value="750237">0.000</td>
+              <td class="duration" data-value="750237">0.004</td>
+              <td class="duration" data-value="6001900">0.006</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.Hooks.afterHook(io.cucumber.java.Scenario)</td>
+              <td>8</td>
+              <td class="duration" data-value="2746900">0.002</td>
+              <td class="duration" data-value="2746900">0.006</td>
+              <td class="duration" data-value="21975200">0.021</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC001_LoginStep.userAddBasicAuthenticationForLogin()</td>
+              <td>1</td>
+              <td class="duration" data-value="435302700">0.435</td>
+              <td class="duration" data-value="435302700">0.435</td>
+              <td class="duration" data-value="435302700">0.435</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC001_LoginStep.userAddHeader()</td>
+              <td>1</td>
+              <td class="duration" data-value="1351645300">1.351</td>
+              <td class="duration" data-value="1351645300">1.351</td>
+              <td class="duration" data-value="1351645300">1.351</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC001_LoginStep.userSendRequestForLoginEndpoint(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="11759381500">11.759</td>
+              <td class="duration" data-value="11759381500">11.759</td>
+              <td class="duration" data-value="11759381500">11.759</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifyTheLoginResponseBodyFirstNamePresentAsAndGetTheLogtokenSaved(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="567917200">0.567</td>
+              <td class="duration" data-value="567917200">0.567</td>
+              <td class="duration" data-value="567917200">0.567</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userAddHeaderAndBearerAuthorizationForAccessingAddToCartEndpoints()</td>
+              <td>1</td>
+              <td class="duration" data-value="2011900">0.002</td>
+              <td class="duration" data-value="2011900">0.002</td>
+              <td class="duration" data-value="2011900">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userAddHeaderAndBearerAuthorizationForAccessingClearCartEndpoints()</td>
+              <td>1</td>
+              <td class="duration" data-value="5002700">0.005</td>
+              <td class="duration" data-value="5002700">0.005</td>
+              <td class="duration" data-value="5002700">0.005</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userAddHeaderAndBearerAuthorizationForAccessingCreateOrderEndpoints()</td>
+              <td>1</td>
+              <td class="duration" data-value="1001700">0.001</td>
+              <td class="duration" data-value="1001700">0.001</td>
+              <td class="duration" data-value="1001700">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userAddHeaderAndBearerAuthorizationForAccessingGetCartEndpoints()</td>
+              <td>1</td>
+              <td class="duration" data-value="2999700">0.002</td>
+              <td class="duration" data-value="2999700">0.002</td>
+              <td class="duration" data-value="2999700">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userAddHeaderAndBearerAuthorizationForAccessingGetSearchProductListEndpoints()</td>
+              <td>1</td>
+              <td class="duration" data-value="999800">0.000</td>
+              <td class="duration" data-value="999800">0.000</td>
+              <td class="duration" data-value="999800">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userAddHeaderAndBearerAuthorizationForAccessingSetAddressEndpoints()</td>
+              <td>1</td>
+              <td class="duration" data-value="998200">0.000</td>
+              <td class="duration" data-value="998200">0.000</td>
+              <td class="duration" data-value="998200">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userAddHeadersForSearchProduct()</td>
+              <td>1</td>
+              <td class="duration" data-value="2004500">0.002</td>
+              <td class="duration" data-value="2004500">0.002</td>
+              <td class="duration" data-value="2004500">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userAddRequestBodyForAddToCart()</td>
+              <td>1</td>
+              <td class="duration" data-value="18980300">0.018</td>
+              <td class="duration" data-value="18980300">0.018</td>
+              <td class="duration" data-value="18980300">0.018</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userAddRequestBodyForCreateOrderProduct(io.cucumber.datatable.DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="27994100">0.027</td>
+              <td class="duration" data-value="27994100">0.027</td>
+              <td class="duration" data-value="27994100">0.027</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userAddRequestBodyForGetSearchProduct()</td>
+              <td>1</td>
+              <td class="duration" data-value="18005100">0.018</td>
+              <td class="duration" data-value="18005100">0.018</td>
+              <td class="duration" data-value="18005100">0.018</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userAddRequestBodyForSearchProduct(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="152570100">0.152</td>
+              <td class="duration" data-value="152570100">0.152</td>
+              <td class="duration" data-value="152570100">0.152</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userAddRequestBodyForSetAddressProduct()</td>
+              <td>1</td>
+              <td class="duration" data-value="15996100">0.015</td>
+              <td class="duration" data-value="15996100">0.015</td>
+              <td class="duration" data-value="15996100">0.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userSendRequestForAddToCartEndpoint(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1988169900">1.988</td>
+              <td class="duration" data-value="1988169900">1.988</td>
+              <td class="duration" data-value="1988169900">1.988</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userSendRequestForClearCartEndpoint(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1000400">0.001</td>
+              <td class="duration" data-value="1000400">0.001</td>
+              <td class="duration" data-value="1000400">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userSendRequestForCreateOrderEndpoint(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3821778100">3.821</td>
+              <td class="duration" data-value="3821778100">3.821</td>
+              <td class="duration" data-value="3821778100">3.821</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userSendRequestForGetCartEndpoint(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="591363400">0.591</td>
+              <td class="duration" data-value="591363400">0.591</td>
+              <td class="duration" data-value="591363400">0.591</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userSendRequestForGetSearchProductListEndpoint(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="4405040400">4.405</td>
+              <td class="duration" data-value="4405040400">4.405</td>
+              <td class="duration" data-value="4405040400">4.405</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userSendRequestForSearchProductEndpoint(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5115126700">5.115</td>
+              <td class="duration" data-value="5115126700">5.115</td>
+              <td class="duration" data-value="5115126700">5.115</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userSendRequestForSetAddressEndpoint(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userShouldVerifyTheAddToCartResponseMessageMatches(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userShouldVerifyTheCreateOrderResponseMessageMatches(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="49640000">0.049</td>
+              <td class="duration" data-value="49640000">0.049</td>
+              <td class="duration" data-value="49640000">0.049</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userShouldVerifyTheGetCartResponseMessageMatchesAndSaveTheCartId(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="49945100">0.049</td>
+              <td class="duration" data-value="49945100">0.049</td>
+              <td class="duration" data-value="49945100">0.049</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userShouldVerifyTheGetSearchProductResponseMessageMatchesWithProductIdAndSaveVariantIdWithSpecifications(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="61995100">0.061</td>
+              <td class="duration" data-value="61995100">0.061</td>
+              <td class="duration" data-value="61995100">0.061</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userShouldVerifyTheResponseMessage(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userShouldVerifyTheSearchProductResponseMessageMatchesAndSaveCategoryIdAndProductIdWithCategoryName(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="15997900">0.015</td>
+              <td class="duration" data-value="15997900">0.015</td>
+              <td class="duration" data-value="15997900">0.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.omrbranch.stepdefinition.TC006_CreateOrderBySearchStep.userShouldVerifyTheSetAddressResponseMessageMatches(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>32</td>
+            <td>46</td>
+            <td class="duration">0.662</td>
+            <td class="duration">11.759</td>
+            <td class="duration">30.490</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

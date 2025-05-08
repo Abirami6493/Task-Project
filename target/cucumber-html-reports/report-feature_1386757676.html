@@ -1,0 +1,2728 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: </title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>OMR Project</td>
+      <td>06 May 2025, 11:12</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname"></td>
+          <td      class="passed"    >38</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">38</td>
+
+          <td  class="passed"    >8</td>
+          <td >0</td>
+          <td class="total">8</td>
+
+          <td class="duration" data-value="30468869800">30.468</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2978296657.html">@CreateOrder</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name"></span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2978296657.html">@CreateOrder</a>
+</div>
+
+
+  <span class="lead-duration duration">14.118</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get User logtoken from login endpoint</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add header</span>
+
+  <span class="lead-duration duration">1.351</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add basic authentication for login</span>
+
+  <span class="lead-duration duration">0.435</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User send <span class="argument">&quot;POST&quot;</span> request for login endpoint</span>
+
+  <span class="lead-duration duration">11.759</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify the login response body firstName present as <span class="argument">&quot;Abirami&quot;</span> and get the logtoken saved</span>
+
+  <span class="lead-duration duration">0.567</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-3" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.omrbranch.stepdefinition.Hooks.afterHook(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-4">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-4" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;Login successfully&quot;,
+    &quot;data&quot;: {
+        &quot;id&quot;: 41,
+        &quot;user_code&quot;: &quot;USRT5xkK&quot;,
+        &quot;first_name&quot;: &quot;Abirami&quot;,
+        &quot;last_name&quot;: &quot;Soundararajan&quot;,
+        &quot;email&quot;: &quot;abirami6493@gmail.com&quot;,
+        &quot;mobile_number&quot;: &quot;8667326751&quot;,
+        &quot;password&quot;: &quot;$2y$10$d8.iI7gOZzezx25/ardLp.WbEITvtIr/sQ09g3eNB0UYuk0VM4LgS&quot;,
+        &quot;api_key&quot;: &quot;QRSTU8449ghi73277&quot;,
+        &quot;days&quot;: 6,
+        &quot;month&quot;: &quot;April&quot;,
+        &quot;year&quot;: &quot;1993&quot;,
+        &quot;gender&quot;: &quot;female&quot;,
+        &quot;hobbies&quot;: &quot;learning&quot;,
+        &quot;forgot_key&quot;: &quot;&quot;,
+        &quot;profile_picture&quot;: &quot;https://omrbranch.com/uploads/profiles/1746265998Apilogo.jpg&quot;,
+        &quot;login_cookie&quot;: &quot;YWJpcmFtaTY0OTNAZ21haWwuY29t1746464035&quot;,
+        &quot;google_signin&quot;: 0,
+        &quot;google_auth_id&quot;: &quot;&quot;,
+        &quot;facebook_signin&quot;: 0,
+        &quot;facebook_id&quot;: &quot;&quot;,
+        &quot;referral_code&quot;: &quot;QR2029FGH64&quot;,
+        &quot;wallet_amount&quot;: 0,
+        &quot;device_id&quot;: null,
+        &quot;device_token&quot;: null,
+        &quot;is_verified&quot;: 1,
+        &quot;admin_verify&quot;: 1,
+        &quot;admin_verified&quot;: 0,
+        &quot;flight_access&quot;: &quot;no&quot;,
+        &quot;device_type&quot;: null,
+        &quot;status&quot;: &quot;AC&quot;,
+        &quot;travel_access&quot;: &quot;no&quot;,
+        &quot;grocery_front_access&quot;: &quot;yes&quot;,
+        &quot;travel_with_api_access&quot;: &quot;no&quot;,
+        &quot;sample_api_access&quot;: &quot;yes&quot;,
+        &quot;database_access&quot;: &quot;no&quot;,
+        &quot;admin_panel_access&quot;: &quot;no&quot;,
+        &quot;mobile_app_access&quot;: &quot;no&quot;,
+        &quot;created_at&quot;: &quot;2025-03-07 11:53:16&quot;,
+        &quot;updated_at&quot;: &quot;2025-05-05 22:23:55&quot;,
+        &quot;refer_screen&quot;: &quot;Ask your friends to signup with your referral code. Once done, both you and your friend each earn $ 5&quot;,
+        &quot;logtoken&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNjYTdiOWI0NTY5YTQzZWZjYTk4NjE4MTRjN2E3ZmY5ZGJjYjZlNTFhZDNjODJkNGQ1ZTU1ZGQ2MzM4NTQ2NDYwNTA4NmE4MmU3ZGYxZTg0In0.eyJhdWQiOiIzIiwianRpIjoiM2NhN2I5YjQ1NjlhNDNlZmNhOTg2MTgxNGM3YTdmZjlkYmNiNmU1MWFkM2M4MmQ0ZDVlNTVkZDYzMzg1NDY0NjA1MDg2YTgyZTdkZjFlODQiLCJpYXQiOjE3NDY1MTAxMDgsIm5iZiI6MTc0NjUxMDEwOCwiZXhwIjoxNzc4MDQ2MTA4LCJzdWIiOiI0MSIsInNjb3BlcyI6W119.uXzgb7uBnLLwcNQBi_mlLP3l9TigPluZok-Ub6DYf38Pg1fEaX_DZ3SdA6YlRmxFEaqpJU7kipyJ3ey_0UWrNfsGr44JacaDTsJ7pl3aaP27uQnE5w4Afgq8ldjqMCGVdcc4lj4thttGHqNI1qI9_dUg8RYGkk-iJ8StiC7cDOFavSYKwvR5XXajpI7mRNR49dIb5lH_oz7Kk57IPrUY42S6Qt3WxQfM_nxdmkdrZqLjd0WwXAiRHrAQh8QSTWLDzblQhmhP6YJEeLReEepj-bEY3wb75QZ-2GPrycB9GKkmcA4D7IK1LQsHgROhWq4tiqDTo1VeF1ZSMiiBSDGK0pPw9zrEpqgchTQMW8tms5D9BeKAFEAGbxJp1hsj6jPsnvkB3nU6tMvn5Iu7K3kWXPJLEU8faQwdyROhXUxPh3nZQ6CcoIXmhClGakHDTafqwO-Tsv1wKTbw4f1yFW0Ifjxiq8NjsrLaiy3W9DbytR8HYA1gE7emJhA-ROSUKY_wiO3dVUHNnaSE1mnLkPyASM0id4Ooh8CKdVmxNLDc-3fsdmRuwI_k65ZKw7P7NCmJUdItCUyUME7l9OwAAuFQc2ueehc86eHH5HnoRwu26HJiCfllF-2skAN1Y6NpZuIfO7OVTrRT8g0YmYKg7jTWVG5vWY6RVG-r5VftZslqC1I&quot;,
+        &quot;user_role&quot;: [
+            {
+                &quot;id&quot;: 7,
+                &quot;role&quot;: &quot;user&quot;,
+                &quot;name&quot;: &quot;User&quot;,
+                &quot;status&quot;: &quot;AC&quot;,
+                &quot;created_at&quot;: &quot;2019-01-24 11:20:45&quot;,
+                &quot;updated_at&quot;: &quot;2022-11-18 12:37:46&quot;,
+                &quot;pivot&quot;: {
+                    &quot;user_id&quot;: 41,
+                    &quot;role_id&quot;: 7
+                }
+            }
+        ]
+    },
+    &quot;refer_msg&quot;: &quot;Register on GoGrocery with QR2029FGH64 and earn $ 5. Download on Android https://play.google.com/store/apps/details?id=com.Go_Grocery&amp;hl=en &amp; Download on iOS https://apps.apple.com/in/app/go-grocery-club/id1512758810&quot;,
+    &quot;cart_count&quot;: 0,
+    &quot;role&quot;: &quot;user&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2978296657.html">@CreateOrder</a>
+</div>
+
+
+  <span class="lead-duration duration">0.006</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify User clear cart through api</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add header and bearer authorization for accessing clear cart endpoints</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User send <span class="argument">&quot;GET&quot;</span> request for clear cart endpoint</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify the status code is <span class="argument">400</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify the response message <span class="argument">&quot;Currently Your Cart is empty&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-7" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.omrbranch.stepdefinition.Hooks.afterHook(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-8">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-8" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;Login successfully&quot;,
+    &quot;data&quot;: {
+        &quot;id&quot;: 41,
+        &quot;user_code&quot;: &quot;USRT5xkK&quot;,
+        &quot;first_name&quot;: &quot;Abirami&quot;,
+        &quot;last_name&quot;: &quot;Soundararajan&quot;,
+        &quot;email&quot;: &quot;abirami6493@gmail.com&quot;,
+        &quot;mobile_number&quot;: &quot;8667326751&quot;,
+        &quot;password&quot;: &quot;$2y$10$d8.iI7gOZzezx25/ardLp.WbEITvtIr/sQ09g3eNB0UYuk0VM4LgS&quot;,
+        &quot;api_key&quot;: &quot;QRSTU8449ghi73277&quot;,
+        &quot;days&quot;: 6,
+        &quot;month&quot;: &quot;April&quot;,
+        &quot;year&quot;: &quot;1993&quot;,
+        &quot;gender&quot;: &quot;female&quot;,
+        &quot;hobbies&quot;: &quot;learning&quot;,
+        &quot;forgot_key&quot;: &quot;&quot;,
+        &quot;profile_picture&quot;: &quot;https://omrbranch.com/uploads/profiles/1746265998Apilogo.jpg&quot;,
+        &quot;login_cookie&quot;: &quot;YWJpcmFtaTY0OTNAZ21haWwuY29t1746464035&quot;,
+        &quot;google_signin&quot;: 0,
+        &quot;google_auth_id&quot;: &quot;&quot;,
+        &quot;facebook_signin&quot;: 0,
+        &quot;facebook_id&quot;: &quot;&quot;,
+        &quot;referral_code&quot;: &quot;QR2029FGH64&quot;,
+        &quot;wallet_amount&quot;: 0,
+        &quot;device_id&quot;: null,
+        &quot;device_token&quot;: null,
+        &quot;is_verified&quot;: 1,
+        &quot;admin_verify&quot;: 1,
+        &quot;admin_verified&quot;: 0,
+        &quot;flight_access&quot;: &quot;no&quot;,
+        &quot;device_type&quot;: null,
+        &quot;status&quot;: &quot;AC&quot;,
+        &quot;travel_access&quot;: &quot;no&quot;,
+        &quot;grocery_front_access&quot;: &quot;yes&quot;,
+        &quot;travel_with_api_access&quot;: &quot;no&quot;,
+        &quot;sample_api_access&quot;: &quot;yes&quot;,
+        &quot;database_access&quot;: &quot;no&quot;,
+        &quot;admin_panel_access&quot;: &quot;no&quot;,
+        &quot;mobile_app_access&quot;: &quot;no&quot;,
+        &quot;created_at&quot;: &quot;2025-03-07 11:53:16&quot;,
+        &quot;updated_at&quot;: &quot;2025-05-05 22:23:55&quot;,
+        &quot;refer_screen&quot;: &quot;Ask your friends to signup with your referral code. Once done, both you and your friend each earn $ 5&quot;,
+        &quot;logtoken&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNjYTdiOWI0NTY5YTQzZWZjYTk4NjE4MTRjN2E3ZmY5ZGJjYjZlNTFhZDNjODJkNGQ1ZTU1ZGQ2MzM4NTQ2NDYwNTA4NmE4MmU3ZGYxZTg0In0.eyJhdWQiOiIzIiwianRpIjoiM2NhN2I5YjQ1NjlhNDNlZmNhOTg2MTgxNGM3YTdmZjlkYmNiNmU1MWFkM2M4MmQ0ZDVlNTVkZDYzMzg1NDY0NjA1MDg2YTgyZTdkZjFlODQiLCJpYXQiOjE3NDY1MTAxMDgsIm5iZiI6MTc0NjUxMDEwOCwiZXhwIjoxNzc4MDQ2MTA4LCJzdWIiOiI0MSIsInNjb3BlcyI6W119.uXzgb7uBnLLwcNQBi_mlLP3l9TigPluZok-Ub6DYf38Pg1fEaX_DZ3SdA6YlRmxFEaqpJU7kipyJ3ey_0UWrNfsGr44JacaDTsJ7pl3aaP27uQnE5w4Afgq8ldjqMCGVdcc4lj4thttGHqNI1qI9_dUg8RYGkk-iJ8StiC7cDOFavSYKwvR5XXajpI7mRNR49dIb5lH_oz7Kk57IPrUY42S6Qt3WxQfM_nxdmkdrZqLjd0WwXAiRHrAQh8QSTWLDzblQhmhP6YJEeLReEepj-bEY3wb75QZ-2GPrycB9GKkmcA4D7IK1LQsHgROhWq4tiqDTo1VeF1ZSMiiBSDGK0pPw9zrEpqgchTQMW8tms5D9BeKAFEAGbxJp1hsj6jPsnvkB3nU6tMvn5Iu7K3kWXPJLEU8faQwdyROhXUxPh3nZQ6CcoIXmhClGakHDTafqwO-Tsv1wKTbw4f1yFW0Ifjxiq8NjsrLaiy3W9DbytR8HYA1gE7emJhA-ROSUKY_wiO3dVUHNnaSE1mnLkPyASM0id4Ooh8CKdVmxNLDc-3fsdmRuwI_k65ZKw7P7NCmJUdItCUyUME7l9OwAAuFQc2ueehc86eHH5HnoRwu26HJiCfllF-2skAN1Y6NpZuIfO7OVTrRT8g0YmYKg7jTWVG5vWY6RVG-r5VftZslqC1I&quot;,
+        &quot;user_role&quot;: [
+            {
+                &quot;id&quot;: 7,
+                &quot;role&quot;: &quot;user&quot;,
+                &quot;name&quot;: &quot;User&quot;,
+                &quot;status&quot;: &quot;AC&quot;,
+                &quot;created_at&quot;: &quot;2019-01-24 11:20:45&quot;,
+                &quot;updated_at&quot;: &quot;2022-11-18 12:37:46&quot;,
+                &quot;pivot&quot;: {
+                    &quot;user_id&quot;: 41,
+                    &quot;role_id&quot;: 7
+                }
+            }
+        ]
+    },
+    &quot;refer_msg&quot;: &quot;Register on GoGrocery with QR2029FGH64 and earn $ 5. Download on Android https://play.google.com/store/apps/details?id=com.Go_Grocery&amp;hl=en &amp; Download on iOS https://apps.apple.com/in/app/go-grocery-club/id1512758810&quot;,
+    &quot;cart_count&quot;: 0,
+    &quot;role&quot;: &quot;user&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2978296657.html">@CreateOrder</a>
+</div>
+
+
+  <span class="lead-duration duration">5.286</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify User Search product through api</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add headers for search product</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add request body for search product <span class="argument">&quot;Nuts&quot;</span></span>
+
+  <span class="lead-duration duration">0.152</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User send <span class="argument">&quot;POST&quot;</span> request for search product endpoint</span>
+
+  <span class="lead-duration duration">5.115</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify the search product response message matches <span class="argument">&quot;OK&quot;</span> and save category id and product id with category name <span class="argument">&quot;Happilo 100% Natural Premium California Almonds | Premium Badam Giri in Fruit &amp; Nuts&quot;</span></span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-11" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.omrbranch.stepdefinition.Hooks.afterHook(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-12">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-12" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;OK&quot;,
+    &quot;data&quot;: [
+        {
+            &quot;image&quot;: &quot;https://omrbranch.com/uploads/categories/1600855330Fruit_Nuts.jpg&quot;,
+            &quot;type&quot;: &quot;product&quot;,
+            &quot;text&quot;: &quot;Happilo 100% Natural Premium California Almonds | Premium Badam Giri in Fruit &amp; Nuts&quot;,
+            &quot;id&quot;: 18,
+            &quot;category_id&quot;: 4
+        },
+        {
+            &quot;image&quot;: &quot;https://omrbranch.com/uploads/categories/1600855330Fruit_Nuts.jpg&quot;,
+            &quot;type&quot;: &quot;product&quot;,
+            &quot;text&quot;: &quot;Tata Sampann 100% Iranian Pistachios Roasted &amp; Salted in Fruit &amp; Nuts&quot;,
+            &quot;id&quot;: 20,
+            &quot;category_id&quot;: 4
+        },
+        {
+            &quot;image&quot;: &quot;https://omrbranch.com/uploads/categories/1600855330Fruit_Nuts.jpg&quot;,
+            &quot;type&quot;: &quot;product&quot;,
+            &quot;text&quot;: &quot;Berries And Nuts Premium Jumbo Brazil Nuts, in Fruit &amp; Nuts&quot;,
+            &quot;id&quot;: 21,
+            &quot;category_id&quot;: 4
+        },
+        {
+            &quot;image&quot;: &quot;https://omrbranch.com/uploads/categories/1600855330Fruit_Nuts.jpg&quot;,
+            &quot;type&quot;: &quot;product&quot;,
+            &quot;text&quot;: &quot;FarmOwn Whole Cashew Nut W320 Regular Size Cashews Kaju in Fruit &amp; Nuts&quot;,
+            &quot;id&quot;: 23,
+            &quot;category_id&quot;: 4
+        },
+        {
+            &quot;image&quot;: &quot;https://omrbranch.com/uploads/categories/1600855330Fruit_Nuts.jpg&quot;,
+            &quot;type&quot;: &quot;product&quot;,
+            &quot;text&quot;: &quot;Amazon Brand - Vedaka Popular Whole Almonds in Fruit &amp; Nuts&quot;,
+            &quot;id&quot;: 24,
+            &quot;category_id&quot;: 4
+        },
+        {
+            &quot;image&quot;: &quot;https://omrbranch.com/uploads/categories/1600855330Fruit_Nuts.jpg&quot;,
+            &quot;type&quot;: &quot;product&quot;,
+            &quot;text&quot;: &quot;The Crunch Studio Premium Iranian Roasted &amp; Salted Pistachios in Fruit &amp; Nuts&quot;,
+            &quot;id&quot;: 25,
+            &quot;category_id&quot;: 4
+        },
+        {
+            &quot;image&quot;: &quot;https://omrbranch.com/uploads/categories/1600855330Fruit_Nuts.jpg&quot;,
+            &quot;type&quot;: &quot;product&quot;,
+            &quot;text&quot;: &quot;Paper Boat Roasted Mixed Nuts with Wayanad Pepper, Premium Dry Fruit Mix | Almonds &amp; Cashews in Fruit &amp; Nuts&quot;,
+            &quot;id&quot;: 26,
+            &quot;category_id&quot;: 4
+        },
+        {
+            &quot;image&quot;: &quot;https://omrbranch.com/uploads/categories/1600855330Fruit_Nuts.jpg&quot;,
+            &quot;type&quot;: &quot;product&quot;,
+            &quot;text&quot;: &quot;Zucchero Roasted Premium Nuts, Seeds &amp; Berries, Unsalted in Fruit &amp; Nuts&quot;,
+            &quot;id&quot;: 30,
+            &quot;category_id&quot;: 4
+        },
+        {
+            &quot;image&quot;: &quot;https://omrbranch.com/uploads/categories/1600855330Fruit_Nuts.jpg&quot;,
+            &quot;type&quot;: &quot;product&quot;,
+            &quot;text&quot;: &quot;Yogabar Super healthy Daily Dose Dry Fruit Nuts, Seeds &amp; Berries Organic Mix | Nutritious, Roasted a in Fruit &amp; Nuts&quot;,
+            &quot;id&quot;: 32,
+            &quot;category_id&quot;: 4
+        },
+        {
+            &quot;image&quot;: &quot;https://omrbranch.com/uploads/categories/1600855330Fruit_Nuts.jpg&quot;,
+            &quot;type&quot;: &quot;product&quot;,
+            &quot;text&quot;: &quot;Nutraj 100% Natural Premium Whole Cashew Nuts in Fruit &amp; Nuts&quot;,
+            &quot;id&quot;: 33,
+            &quot;category_id&quot;: 4
+        }
+    ],
+    &quot;currency&quot;: &quot;$&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2978296657.html">@CreateOrder</a>
+</div>
+
+
+  <span class="lead-duration duration">4.486</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify User get search product through api</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add header and bearer authorization for accessing get search product List endpoints</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add request body for get search product</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User send <span class="argument">&quot;POST&quot;</span> request for get search product List endpoint</span>
+
+  <span class="lead-duration duration">4.405</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify the get search product response message matches <span class="argument">&quot;OK&quot;</span> with product id and save variant id with specifications <span class="argument">&quot;500 g&quot;</span></span>
+
+  <span class="lead-duration duration">0.061</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-15" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.omrbranch.stepdefinition.Hooks.afterHook(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-16">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-16" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;OK&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 18,
+            &quot;product_code&quot;: &quot;PROD3368&quot;,
+            &quot;image&quot;: &quot;https://omrbranch.com/uploads/products/16576077841.jpg&quot;,
+            &quot;name&quot;: &quot;Happilo 100% Natural Premium California Almonds | Premium Badam Giri&quot;,
+            &quot;description&quot;: &quot;&lt;h1 class=\&quot;a-size-base-plus a-text-bold\&quot; style=\&quot;padding: 0px 0px 4px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; text-rendering: optimizelegibility; color: rgb(15, 17, 17); font-family: \&quot;Amazon Ember\&quot;, Arial, sans-serif; font-weight: 700 !important; font-size: 16px !important; line-height: 24px !important;\&quot;&gt;About this item&lt;/h1&gt;&lt;ul class=\&quot;a-unordered-list a-vertical a-spacing-mini\&quot; style=\&quot;margin-right: 0px; margin-bottom: 0px; margin-left: 18px; color: rgb(15, 17, 17); padding: 0px; font-family: \&quot;Amazon Ember\&quot;, Arial, sans-serif; font-size: 14px;\&quot;&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;Suitable for all age groups&lt;/span&gt;&lt;/li&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;100% Real nuts- good for an active life style&lt;/span&gt;&lt;/li&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;Low glycemic Index&lt;/span&gt;&lt;/li&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;High protein, dietary fiber, no gluten, NON-GMO, zero trans fat, zero cholesterol&lt;/span&gt;&lt;/li&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;A pack of nut that prepares you for a power packed day ahead&lt;/span&gt;&lt;/li&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;Happilo Zip Lock Pouch with airtight seal to ensure the product is protected and fresh. Quality assured - Happilo products are rigorously tested against the industry's best quality standards&lt;/span&gt;&lt;/li&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;Rich source of Omega-3, Anti oxidants, Vitamins, Calcium, Iron &amp; Magnesium&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&quot;,
+            &quot;manage_stock&quot;: &quot;1&quot;,
+            &quot;quick_grab&quot;: &quot;0&quot;,
+            &quot;is_exclusive&quot;: &quot;0&quot;,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;medium_image&quot;: &quot;https://omrbranch.com/uploads/products/medium/medium-16576077841.jpg&quot;,
+            &quot;cart_count&quot;: 0,
+            &quot;price&quot;: &quot;300.00&quot;,
+            &quot;special_price&quot;: &quot;290.00&quot;,
+            &quot;original_special_price&quot;: &quot;290.00&quot;,
+            &quot;discount&quot;: 3,
+            &quot;product_variation_option&quot;: [
+                7
+            ],
+            &quot;product_variation_id&quot;: 23,
+            &quot;variations&quot;: [
+                {
+                    &quot;id&quot;: 23,
+                    &quot;product_id&quot;: 18,
+                    &quot;weight&quot;: &quot;&quot;,
+                    &quot;unit_id&quot;: 0,
+                    &quot;qty&quot;: 4854,
+                    &quot;price&quot;: &quot;300.00&quot;,
+                    &quot;special_price&quot;: &quot;290.00&quot;,
+                    &quot;max_qty&quot;: 4854,
+                    &quot;status&quot;: &quot;AC&quot;,
+                    &quot;created_at&quot;: &quot;2022-07-12 12:06:24&quot;,
+                    &quot;updated_at&quot;: &quot;2025-05-06 11:10:41&quot;,
+                    &quot;cart_count&quot;: 0,
+                    &quot;original_special_price&quot;: &quot;290.00&quot;,
+                    &quot;discount&quot;: 3,
+                    &quot;is_available&quot;: 2,
+                    &quot;is_favorite&quot;: 0,
+                    &quot;specifications&quot;: &quot;500 g&quot;,
+                    &quot;variation_option&quot;: [
+                        {
+                            &quot;id&quot;: 30,
+                            &quot;product_id&quot;: 18,
+                            &quot;variation_id&quot;: 23,
+                            &quot;attribute_id&quot;: &quot;3&quot;,
+                            &quot;attribute_value_id&quot;: 7,
+                            &quot;status&quot;: &quot;AC&quot;,
+                            &quot;created_at&quot;: &quot;2022-07-12 12:06:24&quot;,
+                            &quot;updated_at&quot;: &quot;2022-11-18 07:08:01&quot;
+                        }
+                    ],
+                    &quot;options&quot;: [
+                        {
+                            &quot;id&quot;: 30,
+                            &quot;product_id&quot;: 18,
+                            &quot;variation_id&quot;: 23,
+                            &quot;attribute_id&quot;: &quot;3&quot;,
+                            &quot;attribute_value_id&quot;: 7,
+                            &quot;status&quot;: &quot;AC&quot;,
+                            &quot;created_at&quot;: &quot;2022-07-12 12:06:24&quot;,
+                            &quot;updated_at&quot;: &quot;2022-11-18 07:08:01&quot;,
+                            &quot;attribute_option&quot;: {
+                                &quot;id&quot;: 7,
+                                &quot;attribute_id&quot;: 3,
+                                &quot;value&quot;: &quot;500 g&quot;,
+                                &quot;status&quot;: &quot;AC&quot;,
+                                &quot;created_at&quot;: &quot;2022-04-06 08:37:54&quot;,
+                                &quot;updated_at&quot;: &quot;2022-09-16 19:21:03&quot;
+                            }
+                        }
+                    ]
+                },
+                {
+                    &quot;id&quot;: 24,
+                    &quot;product_id&quot;: 18,
+                    &quot;weight&quot;: &quot;&quot;,
+                    &quot;unit_id&quot;: 0,
+                    &quot;qty&quot;: 8692,
+                    &quot;price&quot;: &quot;600.00&quot;,
+                    &quot;special_price&quot;: &quot;580.00&quot;,
+                    &quot;max_qty&quot;: 8692,
+                    &quot;status&quot;: &quot;AC&quot;,
+                    &quot;created_at&quot;: &quot;2022-07-12 12:06:24&quot;,
+                    &quot;updated_at&quot;: &quot;2025-04-29 16:24:21&quot;,
+                    &quot;cart_count&quot;: 0,
+                    &quot;original_special_price&quot;: &quot;580.00&quot;,
+                    &quot;discount&quot;: 3,
+                    &quot;is_available&quot;: 2,
+                    &quot;is_favorite&quot;: 0,
+                    &quot;specifications&quot;: &quot;1 kg&quot;,
+                    &quot;options&quot;: [
+                        {
+                            &quot;id&quot;: 31,
+                            &quot;product_id&quot;: 18,
+                            &quot;variation_id&quot;: 24,
+                            &quot;attribute_id&quot;: &quot;3&quot;,
+                            &quot;attribute_value_id&quot;: 8,
+                            &quot;status&quot;: &quot;AC&quot;,
+                            &quot;created_at&quot;: &quot;2022-07-12 12:06:24&quot;,
+                            &quot;updated_at&quot;: &quot;2022-11-18 07:08:01&quot;,
+                            &quot;attribute_option&quot;: {
+                                &quot;id&quot;: 8,
+                                &quot;attribute_id&quot;: 3,
+                                &quot;value&quot;: &quot;1 kg&quot;,
+                                &quot;status&quot;: &quot;AC&quot;,
+                                &quot;created_at&quot;: &quot;2022-04-06 08:37:54&quot;,
+                                &quot;updated_at&quot;: &quot;2022-09-16 19:21:03&quot;
+                            }
+                        }
+                    ]
+                }
+            ],
+            &quot;is_favorite&quot;: 0
+        }
+    ],
+    &quot;cart_count&quot;: 0
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2978296657.html">@CreateOrder</a>
+</div>
+
+
+  <span class="lead-duration duration">2.009</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify User add to cart through api</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add header and bearer authorization for accessing add to cart endpoints</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add request body for add to cart</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User send <span class="argument">&quot;POST&quot;</span> request for add to cart endpoint</span>
+
+  <span class="lead-duration duration">1.988</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify the add to cart response message matches <span class="argument">&quot;Product added in cart&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-19" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.omrbranch.stepdefinition.Hooks.afterHook(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-20">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-20" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;Product added in cart&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;cart_count&quot;: 1,
+    &quot;data&quot;: {
+        &quot;id&quot;: 18,
+        &quot;product_code&quot;: &quot;PROD3368&quot;,
+        &quot;image&quot;: &quot;https://omrbranch.com/uploads/products/16576077841.jpg&quot;,
+        &quot;name&quot;: &quot;Happilo 100% Natural Premium California Almonds | Premium Badam Giri&quot;,
+        &quot;description&quot;: &quot;&lt;h1 class=\&quot;a-size-base-plus a-text-bold\&quot; style=\&quot;padding: 0px 0px 4px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; text-rendering: optimizelegibility; color: rgb(15, 17, 17); font-family: \&quot;Amazon Ember\&quot;, Arial, sans-serif; font-weight: 700 !important; font-size: 16px !important; line-height: 24px !important;\&quot;&gt;About this item&lt;/h1&gt;&lt;ul class=\&quot;a-unordered-list a-vertical a-spacing-mini\&quot; style=\&quot;margin-right: 0px; margin-bottom: 0px; margin-left: 18px; color: rgb(15, 17, 17); padding: 0px; font-family: \&quot;Amazon Ember\&quot;, Arial, sans-serif; font-size: 14px;\&quot;&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;Suitable for all age groups&lt;/span&gt;&lt;/li&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;100% Real nuts- good for an active life style&lt;/span&gt;&lt;/li&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;Low glycemic Index&lt;/span&gt;&lt;/li&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;High protein, dietary fiber, no gluten, NON-GMO, zero trans fat, zero cholesterol&lt;/span&gt;&lt;/li&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;A pack of nut that prepares you for a power packed day ahead&lt;/span&gt;&lt;/li&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;Happilo Zip Lock Pouch with airtight seal to ensure the product is protected and fresh. Quality assured - Happilo products are rigorously tested against the industry's best quality standards&lt;/span&gt;&lt;/li&gt;&lt;li style=\&quot;list-style: disc; overflow-wrap: break-word; margin: 0px;\&quot;&gt;&lt;span class=\&quot;a-list-item\&quot;&gt;Rich source of Omega-3, Anti oxidants, Vitamins, Calcium, Iron &amp; Magnesium&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&quot;,
+        &quot;manage_stock&quot;: &quot;1&quot;,
+        &quot;quick_grab&quot;: &quot;0&quot;,
+        &quot;is_exclusive&quot;: &quot;0&quot;,
+        &quot;status&quot;: &quot;AC&quot;,
+        &quot;cart_count&quot;: 1,
+        &quot;price&quot;: &quot;300.00&quot;,
+        &quot;special_price&quot;: &quot;290.00&quot;,
+        &quot;discount&quot;: 3,
+        &quot;product_variation_option&quot;: [
+            7
+        ],
+        &quot;product_variation_id&quot;: 23,
+        &quot;variations&quot;: [
+            {
+                &quot;id&quot;: 23,
+                &quot;product_id&quot;: 18,
+                &quot;weight&quot;: &quot;&quot;,
+                &quot;unit_id&quot;: 0,
+                &quot;qty&quot;: 4854,
+                &quot;price&quot;: &quot;300.00&quot;,
+                &quot;special_price&quot;: &quot;290.00&quot;,
+                &quot;max_qty&quot;: 4854,
+                &quot;status&quot;: &quot;AC&quot;,
+                &quot;created_at&quot;: &quot;2022-07-12 12:06:24&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-06 11:10:41&quot;,
+                &quot;cart_count&quot;: 1,
+                &quot;discount&quot;: 3,
+                &quot;is_available&quot;: 2,
+                &quot;is_favorite&quot;: 0,
+                &quot;specifications&quot;: &quot;500 g&quot;,
+                &quot;options&quot;: [
+                    {
+                        &quot;id&quot;: 30,
+                        &quot;product_id&quot;: 18,
+                        &quot;variation_id&quot;: 23,
+                        &quot;attribute_id&quot;: &quot;3&quot;,
+                        &quot;attribute_value_id&quot;: 7,
+                        &quot;status&quot;: &quot;AC&quot;,
+                        &quot;created_at&quot;: &quot;2022-07-12 12:06:24&quot;,
+                        &quot;updated_at&quot;: &quot;2022-11-18 07:08:01&quot;,
+                        &quot;attribute_option&quot;: {
+                            &quot;id&quot;: 7,
+                            &quot;attribute_id&quot;: 3,
+                            &quot;value&quot;: &quot;500 g&quot;,
+                            &quot;status&quot;: &quot;AC&quot;,
+                            &quot;created_at&quot;: &quot;2022-04-06 08:37:54&quot;,
+                            &quot;updated_at&quot;: &quot;2022-09-16 19:21:03&quot;
+                        }
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 24,
+                &quot;product_id&quot;: 18,
+                &quot;weight&quot;: &quot;&quot;,
+                &quot;unit_id&quot;: 0,
+                &quot;qty&quot;: 8692,
+                &quot;price&quot;: &quot;600.00&quot;,
+                &quot;special_price&quot;: &quot;580.00&quot;,
+                &quot;max_qty&quot;: 8692,
+                &quot;status&quot;: &quot;AC&quot;,
+                &quot;created_at&quot;: &quot;2022-07-12 12:06:24&quot;,
+                &quot;updated_at&quot;: &quot;2025-04-29 16:24:21&quot;,
+                &quot;cart_count&quot;: 0,
+                &quot;original_special_price&quot;: &quot;580.00&quot;,
+                &quot;discount&quot;: 3,
+                &quot;is_available&quot;: 2,
+                &quot;is_favorite&quot;: 0,
+                &quot;specifications&quot;: &quot;1 kg&quot;,
+                &quot;options&quot;: [
+                    {
+                        &quot;id&quot;: 31,
+                        &quot;product_id&quot;: 18,
+                        &quot;variation_id&quot;: 24,
+                        &quot;attribute_id&quot;: &quot;3&quot;,
+                        &quot;attribute_value_id&quot;: 8,
+                        &quot;status&quot;: &quot;AC&quot;,
+                        &quot;created_at&quot;: &quot;2022-07-12 12:06:24&quot;,
+                        &quot;updated_at&quot;: &quot;2022-11-18 07:08:01&quot;,
+                        &quot;attribute_option&quot;: {
+                            &quot;id&quot;: 8,
+                            &quot;attribute_id&quot;: 3,
+                            &quot;value&quot;: &quot;1 kg&quot;,
+                            &quot;status&quot;: &quot;AC&quot;,
+                            &quot;created_at&quot;: &quot;2022-04-06 08:37:54&quot;,
+                            &quot;updated_at&quot;: &quot;2022-09-16 19:21:03&quot;
+                        }
+                    }
+                ]
+            }
+        ],
+        &quot;is_favorite&quot;: 0
+    }
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2978296657.html">@CreateOrder</a>
+</div>
+
+
+  <span class="lead-duration duration">0.645</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify User get cart through api</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add header and bearer authorization for accessing get cart endpoints</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User send <span class="argument">&quot;GET&quot;</span> request for get cart endpoint</span>
+
+  <span class="lead-duration duration">0.591</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify the get cart response message matches <span class="argument">&quot;OK&quot;</span> and save the cart id</span>
+
+  <span class="lead-duration duration">0.049</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-23" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.omrbranch.stepdefinition.Hooks.afterHook(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-24">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-24" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;OK&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 7761,
+            &quot;cart_id&quot;: 4007,
+            &quot;product_id&quot;: 18,
+            &quot;product_variation_id&quot;: 23,
+            &quot;qty&quot;: 1,
+            &quot;price&quot;: &quot;300.00&quot;,
+            &quot;special_price&quot;: &quot;290.00&quot;,
+            &quot;offer_id&quot;: null,
+            &quot;coupon_code_id&quot;: null,
+            &quot;coupon_discount&quot;: null,
+            &quot;scheduled&quot;: 0,
+            &quot;start_date&quot;: &quot;2025-05-11&quot;,
+            &quot;end_date&quot;: &quot;2025-05-11&quot;,
+            &quot;delivery_slot_id&quot;: 6,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;created_at&quot;: &quot;2025-05-06 11:12:05&quot;,
+            &quot;updated_at&quot;: &quot;2025-05-06 11:12:05&quot;,
+            &quot;is_available&quot;: 2,
+            &quot;product_name&quot;: &quot;Happilo 100% Natural Premium California Almonds | Premium Badam Giri (500 g)&quot;,
+            &quot;product_image&quot;: &quot;https://omrbranch.com/uploads/products/16576077841.jpg&quot;,
+            &quot;product_medium_image&quot;: &quot;https://omrbranch.com/uploads/products/medium/medium-16576077841.jpg&quot;,
+            &quot;discount&quot;: 3,
+            &quot;delivery_slots&quot;: &quot;08:00 AM to 11:00 AM&quot;,
+            &quot;delivery_slot_type&quot;: &quot;single&quot;,
+            &quot;is_favorite&quot;: 0,
+            &quot;max_qty&quot;: 10000
+        }
+    ],
+    &quot;cart_count&quot;: 1,
+    &quot;payment&quot;: &quot;Debit Card&quot;,
+    &quot;wallet&quot;: &quot;0.00&quot;,
+    &quot;total_amount&quot;: &quot;290.00&quot;,
+    &quot;coupon_discount&quot;: &quot;0.00&quot;,
+    &quot;shipping_fee&quot;: &quot;0.00&quot;,
+    &quot;grand_total&quot;: &quot;290.00&quot;,
+    &quot;savings&quot;: &quot;10.00&quot;,
+    &quot;credit_usage&quot;: 0,
+    &quot;credits_used&quot;: &quot;0.00&quot;,
+    &quot;payment_key&quot;: &quot;debit_card&quot;,
+    &quot;address&quot;: {
+        &quot;id&quot;: 6616,
+        &quot;address_code&quot;: &quot;ADDjMaII&quot;,
+        &quot;user_id&quot;: 41,
+        &quot;first_name&quot;: &quot;Abirami&quot;,
+        &quot;last_name&quot;: &quot;Soundar&quot;,
+        &quot;mobile&quot;: &quot;8667326751&quot;,
+        &quot;apartment&quot;: &quot;s2&quot;,
+        &quot;address&quot;: &quot;Dindigul&quot;,
+        &quot;country_id&quot;: 101,
+        &quot;state_id&quot;: 35,
+        &quot;city_id&quot;: 3659,
+        &quot;zipcode&quot;: &quot;624001&quot;,
+        &quot;lat&quot;: null,
+        &quot;lng&quot;: null,
+        &quot;default&quot;: 1,
+        &quot;status&quot;: &quot;AC&quot;,
+        &quot;address_type&quot;: &quot;home&quot;,
+        &quot;created_at&quot;: &quot;2025-04-26 17:26:30&quot;,
+        &quot;updated_at&quot;: &quot;2025-04-26 17:26:32&quot;,
+        &quot;city&quot;: &quot;Chennai&quot;,
+        &quot;state&quot;: &quot;Tamil Nadu&quot;,
+        &quot;country&quot;: &quot;India&quot;
+    }
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2978296657.html">@CreateOrder</a>
+</div>
+
+
+  <span class="lead-duration duration">0.016</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify User set address through api</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-26" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add header and bearer authorization for accessing set address endpoints</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add request body for set address product</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User send <span class="argument">&quot;POST&quot;</span> request for set address endpoint</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify the set address response message matches <span class="argument">&quot;Cart updated successfully&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-27" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.omrbranch.stepdefinition.Hooks.afterHook(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-28">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-28" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;OK&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 7761,
+            &quot;cart_id&quot;: 4007,
+            &quot;product_id&quot;: 18,
+            &quot;product_variation_id&quot;: 23,
+            &quot;qty&quot;: 1,
+            &quot;price&quot;: &quot;300.00&quot;,
+            &quot;special_price&quot;: &quot;290.00&quot;,
+            &quot;offer_id&quot;: null,
+            &quot;coupon_code_id&quot;: null,
+            &quot;coupon_discount&quot;: null,
+            &quot;scheduled&quot;: 0,
+            &quot;start_date&quot;: &quot;2025-05-11&quot;,
+            &quot;end_date&quot;: &quot;2025-05-11&quot;,
+            &quot;delivery_slot_id&quot;: 6,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;created_at&quot;: &quot;2025-05-06 11:12:05&quot;,
+            &quot;updated_at&quot;: &quot;2025-05-06 11:12:05&quot;,
+            &quot;is_available&quot;: 2,
+            &quot;product_name&quot;: &quot;Happilo 100% Natural Premium California Almonds | Premium Badam Giri (500 g)&quot;,
+            &quot;product_image&quot;: &quot;https://omrbranch.com/uploads/products/16576077841.jpg&quot;,
+            &quot;product_medium_image&quot;: &quot;https://omrbranch.com/uploads/products/medium/medium-16576077841.jpg&quot;,
+            &quot;discount&quot;: 3,
+            &quot;delivery_slots&quot;: &quot;08:00 AM to 11:00 AM&quot;,
+            &quot;delivery_slot_type&quot;: &quot;single&quot;,
+            &quot;is_favorite&quot;: 0,
+            &quot;max_qty&quot;: 10000
+        }
+    ],
+    &quot;cart_count&quot;: 1,
+    &quot;payment&quot;: &quot;Debit Card&quot;,
+    &quot;wallet&quot;: &quot;0.00&quot;,
+    &quot;total_amount&quot;: &quot;290.00&quot;,
+    &quot;coupon_discount&quot;: &quot;0.00&quot;,
+    &quot;shipping_fee&quot;: &quot;0.00&quot;,
+    &quot;grand_total&quot;: &quot;290.00&quot;,
+    &quot;savings&quot;: &quot;10.00&quot;,
+    &quot;credit_usage&quot;: 0,
+    &quot;credits_used&quot;: &quot;0.00&quot;,
+    &quot;payment_key&quot;: &quot;debit_card&quot;,
+    &quot;address&quot;: {
+        &quot;id&quot;: 6616,
+        &quot;address_code&quot;: &quot;ADDjMaII&quot;,
+        &quot;user_id&quot;: 41,
+        &quot;first_name&quot;: &quot;Abirami&quot;,
+        &quot;last_name&quot;: &quot;Soundar&quot;,
+        &quot;mobile&quot;: &quot;8667326751&quot;,
+        &quot;apartment&quot;: &quot;s2&quot;,
+        &quot;address&quot;: &quot;Dindigul&quot;,
+        &quot;country_id&quot;: 101,
+        &quot;state_id&quot;: 35,
+        &quot;city_id&quot;: 3659,
+        &quot;zipcode&quot;: &quot;624001&quot;,
+        &quot;lat&quot;: null,
+        &quot;lng&quot;: null,
+        &quot;default&quot;: 1,
+        &quot;status&quot;: &quot;AC&quot;,
+        &quot;address_type&quot;: &quot;home&quot;,
+        &quot;created_at&quot;: &quot;2025-04-26 17:26:30&quot;,
+        &quot;updated_at&quot;: &quot;2025-04-26 17:26:32&quot;,
+        &quot;city&quot;: &quot;Chennai&quot;,
+        &quot;state&quot;: &quot;Tamil Nadu&quot;,
+        &quot;country&quot;: &quot;India&quot;
+    }
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2978296657.html">@CreateOrder</a>
+</div>
+
+
+  <span class="lead-duration duration">3.900</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify User able to create Order</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-29" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-30">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-30" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add header and bearer authorization for accessing create order endpoints</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add request body for create order product</span>
+
+  <span class="lead-duration duration">0.027</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>Select card</td>
+                  <td>CardNo</td>
+                  <td>CardName</td>
+                  <td>Month</td>
+                  <td>Year</td>
+                  <td>CVV</td>
+              </tr>
+              <tr>
+                  <td>Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Abirami</td>
+                  <td>March</td>
+                  <td>2028</td>
+                  <td>143</td>
+              </tr>
+              <tr>
+                  <td>Mastercard</td>
+                  <td>5555555555554444</td>
+                  <td>Your name</td>
+                  <td>March</td>
+                  <td>2028</td>
+                  <td>123</td>
+              </tr>
+              <tr>
+                  <td>Amex</td>
+                  <td>5555555555550000</td>
+                  <td>Your name</td>
+                  <td>March</td>
+                  <td>2028</td>
+                  <td>123</td>
+              </tr>
+              <tr>
+                  <td>Discover</td>
+                  <td>5555555555556666</td>
+                  <td>Your name</td>
+                  <td>March</td>
+                  <td>2028</td>
+                  <td>123</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User send <span class="argument">&quot;POST&quot;</span> request for create order endpoint</span>
+
+  <span class="lead-duration duration">3.821</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify the create order response message matches <span class="argument">&quot;Order created successfully&quot;</span></span>
+
+  <span class="lead-duration duration">0.049</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-31">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-31" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.omrbranch.stepdefinition.Hooks.afterHook(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-32">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-32" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;Order created successfully&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;data&quot;: {
+        &quot;order_code&quot;: &quot;ORDXqf3o&quot;,
+        &quot;order_no&quot;: 607228,
+        &quot;user_id&quot;: 41,
+        &quot;address_id&quot;: 6616,
+        &quot;payment_method&quot;: &quot;debit_card&quot;,
+        &quot;wallet&quot;: &quot;0&quot;,
+        &quot;updated_at&quot;: &quot;2025-05-06 11:12:08&quot;,
+        &quot;created_at&quot;: &quot;2025-05-06 11:12:07&quot;,
+        &quot;id&quot;: 4087,
+        &quot;total_amount&quot;: &quot;290.00&quot;,
+        &quot;coupon_discount&quot;: &quot;0.00&quot;,
+        &quot;shipping_fee&quot;: &quot;0.00&quot;,
+        &quot;grand_total&quot;: &quot;290.00&quot;,
+        &quot;savings&quot;: &quot;10.00&quot;,
+        &quot;credits_used&quot;: &quot;0.00&quot;,
+        &quot;amount&quot;: 280,
+        &quot;user_address&quot;: {
+            &quot;id&quot;: 6616,
+            &quot;address_code&quot;: &quot;ADDjMaII&quot;,
+            &quot;user_id&quot;: 41,
+            &quot;first_name&quot;: &quot;Abirami&quot;,
+            &quot;last_name&quot;: &quot;Soundar&quot;,
+            &quot;mobile&quot;: &quot;8667326751&quot;,
+            &quot;apartment&quot;: &quot;s2&quot;,
+            &quot;address&quot;: &quot;Dindigul&quot;,
+            &quot;country_id&quot;: 101,
+            &quot;state_id&quot;: 35,
+            &quot;city_id&quot;: 3659,
+            &quot;zipcode&quot;: &quot;624001&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: &quot;1&quot;,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;home&quot;,
+            &quot;created_at&quot;: &quot;2025-04-26 17:26:30&quot;,
+            &quot;updated_at&quot;: &quot;2025-04-26 17:26:32&quot;,
+            &quot;acity&quot;: {
+                &quot;id&quot;: 3659,
+                &quot;name&quot;: &quot;Chennai&quot;
+            },
+            &quot;astate&quot;: {
+                &quot;id&quot;: 35,
+                &quot;name&quot;: &quot;Tamil Nadu&quot;,
+                &quot;country_id&quot;: 101,
+                &quot;status&quot;: &quot;AC&quot;,
+                &quot;country&quot;: {
+                    &quot;id&quot;: 101,
+                    &quot;code&quot;: &quot;IN&quot;,
+                    &quot;name&quot;: &quot;India&quot;,
+                    &quot;phonecode&quot;: 91,
+                    &quot;currency_name&quot;: &quot;Indian rupee&quot;,
+                    &quot;currency_symbol&quot;: &quot;₹&quot;,
+                    &quot;currency_code&quot;: &quot;INR&quot;,
+                    &quot;status&quot;: &quot;AC&quot;
+                }
+            },
+            &quot;acountry&quot;: {
+                &quot;id&quot;: 101,
+                &quot;code&quot;: &quot;IN&quot;,
+                &quot;name&quot;: &quot;India&quot;,
+                &quot;phonecode&quot;: 91,
+                &quot;currency_name&quot;: &quot;Indian rupee&quot;,
+                &quot;currency_symbol&quot;: &quot;₹&quot;,
+                &quot;currency_code&quot;: &quot;INR&quot;,
+                &quot;status&quot;: &quot;AC&quot;
+            }
+        }
+    },
+    &quot;order_id&quot;: 4087
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
